@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from asgiref.sync import async_to_sync
 from channels.layers import get_channel_layer
 from .consumers import ChatConsumer
+from django.conf import settings
 
 # Create your views here.
 class ChatLogDetail(APIView):
