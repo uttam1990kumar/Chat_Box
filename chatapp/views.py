@@ -3,7 +3,6 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from asgiref.sync import async_to_sync
 from channels.layers import get_channel_layer
-from .consumers import ChatConsumer
 from django.conf import settings
 
 # Create your views here.
@@ -26,7 +25,7 @@ from django.core.mail import EmailMultiAlternatives
 from django.conf import settings
 
 def home_page(request):
-    subject, from_email, to = 'hello', 'zuhoo123@zohomail.in', 'uttam3392kumar@gmail.com'
+    subject, from_email, to = 'hello', 'xxxxx@zohomail.in', 'xxxxxxx@gmail.com'
     text_content = 'This is an important message.'
     html_content = '<p>This is an <strong>important</strong> message From Uttam.</p>'
     msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
